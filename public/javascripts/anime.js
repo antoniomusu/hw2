@@ -43,7 +43,12 @@ function onCommentJson(json){
       username.href = "/profile/"+c.user;
       username.textContent = c.user;
       const image = document.createElement('img');
-      image.src = c.avatar;
+      if(c.avatar === "default.jpeg"){
+        image.src = "/images/default.jpeg";
+      }
+      else{
+        image.src = c.avatar;
+      }
       const comment = document.createElement('p');
       comment.classList.add("comment");
       comment.textContent = c.comment;
