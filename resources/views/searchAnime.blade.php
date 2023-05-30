@@ -25,7 +25,7 @@
                     </div>
                 @endforeach   
             @else
-                echo "<h1>Nessun risultato trovato!</h1>";
+                <h1>Nessun risultato trovato!</h1>
             @endif
         </div>
         
